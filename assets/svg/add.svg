@@ -1,0 +1,5 @@
+<svg id="add" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <circle id="Elipse_4" data-name="Elipse 4" cx="10" cy="10" r="10" fill="#fff"/>
+  <rect id="Retângulo_28" data-name="Retângulo 28" width="2" height="12" transform="translate(9 4)" fill="#45d"/>
+  <rect id="Retângulo_29" data-name="Retângulo 29" width="2" height="12" transform="translate(16 9) rotate(90)" fill="#45d"/>
+</svg>
