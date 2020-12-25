@@ -260,3 +260,57 @@ a {
     font-size: 2em;
   }
 }
+
+/*blockquote*/
+.quote {
+  background: url(/assets/fotos/citacao.jpg) top center no-repeat;
+  background-size: cover;
+  padding: 100px 80px;
+}
+
+.quote img {
+  position: relative;
+  bottom: -130px;
+  left: -15px;
+}
+
+.quote p {
+  font-size: 2.625em;
+  color: white;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 30px;
+  max-width: 675px;
+}
+
+.quote cite {
+  font-size: 1.25em;
+  color: #C5C5C5;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@media (max-width: 860px) {
+  .quote {
+    background-size: auto;
+    padding: 0px 20px 100px 20px;
+  }
+
+  .quote img {
+    width: 80px;
+    bottom: -100px;
+  }
+
+  .quote p {
+    font-size: 2em;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote p {
+    font-size: 1.8em;
+  }
+}
+
+/*cadastro*/
