@@ -82,6 +82,9 @@ a {
     background: #F2F2F2;
     width: 200px;
     align-items: flex-start;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.30);
+    top: 12%;
   }
 
   .menu li + li:before {
@@ -90,7 +93,7 @@ a {
     margin: 20px auto;
     width: 180px;
     height: 2px;
-    background: #808080;
+    background: #C5C5C5;
   }
 
   .cad {
