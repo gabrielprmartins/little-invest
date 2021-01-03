@@ -66,11 +66,99 @@ a {
   color: white;
 }
 
+.header-container .label, .input {
+  display: none;
+}
+
 /*menu hamburguer*/
 @media (max-width: 860px) {
   .menu {
-    margin-top: 10px;
+    display: none;
+    flex-direction: column;
+    transition: all .4s;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    background: #F2F2F2;
+    width: 200px;
+    align-items: flex-start;
   }
+
+  .menu li + li:before {
+    content: '';
+    display: block;
+    margin: 20px 0;
+    width: 200px;
+    height: 2px;
+    background: #808080;
+  }
+
+  .cad {
+    margin-top: 30px;
+  }
+
+  .header-container .label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #4455DD;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.30);
+  }
+
+  .header-container .label span {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: white;
+    top: 19.4px;
+    transition: all .2s;
+  }
+
+  .header-container .label span:nth-child(1) {
+    top: 12.4px;
+  }
+
+  .header-container .label span:nth-child(3) {
+    top: 26.4px;
+  }
+
+  @keyframes direita {
+    from {
+      right: 15px;
+    }
+
+    to {
+      right: 100%;
+      background: transparent;
+    }
+  }
+
+  .header-container .input:checked ~ .label span:nth-child(2) {
+    right: 100%;
+    animation: direita .2s alternate;
+  }
+
+  .header-container .input:checked ~ .label span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 19.4px;
+  }
+
+  .header-container .input:checked ~ .label span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 19.4px;
+  }
+
+  .header-container .input:checked ~ .menu {
+    display: flex;
+  }
+  
+
 }
 
 @media (max-width: 480px) {
