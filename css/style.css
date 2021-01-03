@@ -76,7 +76,7 @@ a {
     display: none;
     flex-direction: column;
     transition: all .4s;
-    padding: 20px;
+    padding: 20px 10px;
     position: absolute;
     right: 0;
     background: #F2F2F2;
@@ -87,8 +87,8 @@ a {
   .menu li + li:before {
     content: '';
     display: block;
-    margin: 20px 0;
-    width: 200px;
+    margin: 20px auto;
+    width: 180px;
     height: 2px;
     background: #808080;
   }
@@ -157,13 +157,15 @@ a {
   .header-container .input:checked ~ .menu {
     display: flex;
   }
-  
-
 }
 
 @media (max-width: 480px) {
-  .menu li + li {
-    margin: 15px auto;
+  .menu li + li:before {
+    margin: 10px auto;
+  }
+
+  .menu li:last-child::before {
+    margin: 10px auto 20px auto;
   }
 }
 
