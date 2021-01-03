@@ -66,11 +66,8 @@ a {
   color: white;
 }
 
+/*menu hamburguer*/
 @media (max-width: 860px) {
-  .header-container {
-    flex-direction: column;
-  }
-
   .menu {
     margin-top: 10px;
   }
